@@ -8,9 +8,9 @@ Installation
 
 1. `bundle install`
 2. `rackup`
-3. Go to [http://localhost:4567/jsus/javasacripts/require/CKEditor](http://localhost:4567/jsus/javasacripts/require/CKEditor)
+3. Go to [http://localhost:9292/javascripts/jsus/require/CKEditor](http://localhost:9292/javascripts/jsus/require/CKEditor)
 and see the file being built
-4. Experiment with urls. E.g.: /jsus/javascripts/require/CKEditor:plugins.about.plugin+CKEditor:plugins.adobeair.plugin.js
+4. Experiment with urls. E.g.: /javascripts/jsus/require/CKEditor:plugins.about.plugin+CKEditor:plugins.adobeair.plugin.js
 
 
 Things to notice
