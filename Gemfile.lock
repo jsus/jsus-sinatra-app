@@ -1,0 +1,31 @@
+PATH
+  remote: /Users/mark/Code/jsus
+  specs:
+    jsus (0.2.7)
+      activesupport
+      json_pure
+      rgl
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activesupport (3.0.6)
+    json_pure (1.5.1)
+    rack (1.2.2)
+    rake (0.8.7)
+    rgl (0.4.0)
+      rake
+      stream (>= 0.5)
+    sinatra (1.2.3)
+      rack (~> 1.1)
+      tilt (>= 1.2.2, < 2.0)
+    stream (0.5)
+    tilt (1.2.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  jsus!
+  rack
+  sinatra
