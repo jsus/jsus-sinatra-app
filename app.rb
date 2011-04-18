@@ -7,7 +7,8 @@ require 'sinatra/base'
 Jsus::Middleware.settings = {
   :cache        => true,
   :cache_path   => File.expand_path("../public/javascripts/jsus/require", __FILE__),
-  :packages_dir => File.expand_path("../vendor/js", __FILE__)
+  :packages_dir => File.expand_path("../vendor/js", __FILE__),
+  :cache_pool   => false
 }
 
 class JsusApplication < Sinatra::Base
