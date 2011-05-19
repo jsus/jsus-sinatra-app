@@ -20,7 +20,8 @@ class JsusApplication < Sinatra::Base
       "Ping! Use jsus urls to see some magic.\n\n"    <<
       "E.g.: /javascripts/jsus/require/CKEditor.js\n" <<
       "/javascripts/jsus/require/CKEditor~CKEditor:core.config~CKEditor:core.command.js\n" <<
-      "/javascripts/jsus/require/CKEditor:plugins.div.plugin+CKEditor:plugins.domiterator.plugin.js"
+      "/javascripts/jsus/require/CKEditor:plugins.div.plugin+CKEditor:plugins.domiterator.plugin.js\n" <<
+      "Or even: /javascripts/jsus/require/**:*undo*.js\n"
     ]
   end
 end # class JsusApplication
