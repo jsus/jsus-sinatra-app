@@ -11,8 +11,18 @@ Jsus::Middleware.settings = {
   :cache_pool   => false
 }
 
+class Jsus::HackedMiddleware < Jsus::Middleware
+  def get_associated_files(tag)
+    if !tag.kind_of?(String) || tag.index("/")
+      super
+    else
+      super("**/#{tag}")
+    end
+  end
+end
+
 class JsusApplication < Sinatra::Base
-  use Jsus::Middleware
+  use Jsus::HackedMiddleware
   set :static, true
   get '/' do
     [
