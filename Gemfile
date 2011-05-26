@@ -12,4 +12,4 @@ end
 
 gem "rack"
 gem "sinatra"
-custom_gem "jsus", :git => "git://github.com/markiz/jsus.git", :branch => "master"
+custom_gem "jsus", :git => "git://github.com/jsus/jsus.git", :branch => "master"
