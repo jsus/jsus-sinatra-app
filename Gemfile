@@ -1,6 +1,7 @@
 source :rubygems
 
-# Use local clones if possible.
+# Use local clones if possible. Please note, this is NOT NECESSARY for your
+# real application. It's only for ease of development.
 def custom_gem(name, options = Hash.new)
   local_path = File.expand_path("../../#{name}", __FILE__)
   if ENV["USE_JSUS_CUSTOM_GEMS"] && File.directory?(local_path)
