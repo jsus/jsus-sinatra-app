@@ -7,11 +7,12 @@ Installation
 ============
 
 1. `bundle install`
-2. `rackup`
-3. Go to [http://localhost:9292/javascripts/jsus/require/CKEditor](http://localhost:9292/javascripts/jsus/require/CKEditor)
+2.  `git submodule update --init`
+3. `rackup`
+4. Go to [http://localhost:9292/javascripts/jsus/require/CKEditor](http://localhost:9292/javascripts/jsus/require/CKEditor)
 and see the file being built
-4. Experiment with urls. E.g.: `/javascripts/jsus/require/CKEditor:plugins.about.plugin+CKEditor:plugins.adobeair.plugin.js`
-4a. Wildcards also work! `/javascripts/jsus/require/**:*undo*.js`
+5. Experiment with urls. E.g.: `/javascripts/jsus/require/CKEditor:plugins.about.plugin+CKEditor:plugins.adobeair.plugin.js`
+5a. Wildcards also work! `/javascripts/jsus/require/**:*undo*.js`
 
 
 Things to notice
