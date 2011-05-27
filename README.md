@@ -1,7 +1,7 @@
 Description
 ===========
 
-Live example for [jsus](https://github.com/markiz/jsus) rack middleware.
+Live example for [jsus](https://github.com/jsus/jsus) rack middleware.
 
 Installation
 ============
