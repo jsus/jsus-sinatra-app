@@ -6,15 +6,19 @@ require 'sinatra/base'
 
 Jsus::Middleware.settings = {
   :cache         => true,
-  :cache_path    => File.expand_path("../public/javascripts/jsus/require", __FILE__),
+  :cache_path    => File.expand_path("../public/javascripts/jsus", __FILE__),
   :packages_dir  => File.expand_path("../vendor/js", __FILE__),
   :cache_pool    => false,
-  :includes_root => File.expand_path("../vendor/js", __FILE__)
+  :includes_root => File.expand_path("../vendor/js", __FILE__),
+  :log_method    => :console
 }
+Jsus.verbose = true
 
 class JsusApplication < Sinatra::Base
   use Jsus::Middleware
-  set :static, true
+
+
+  set :static,  true
   get '/' do
     [
       200, {"Content-Type" => "text/plain"},
